@@ -21,8 +21,16 @@
 .schoenen {
     display: flex;
     justify-content: center;
-    margin-top: 13em;
+    margin-top: 8em;
     flex-wrap: nowrap;
+}
+
+.schoenen h2{
+    margin-bottom: 5em;
+}
+
+body{
+    background-color:#f4f1eb;
 }
 
 h1{
@@ -32,10 +40,6 @@ h1{
 
 h2{
     text-align: center;
-}
-
-body{
-    background-color:#f4f1eb;
 }
 
 ul{
@@ -56,14 +60,14 @@ footer{
     align-items: center;
     padding: 1em;
     gap: 2em;
-    margin-top: 12em;
+    margin-top: 15em;
 }
 
 footer img{
     margin-right: auto;
 }
 
-.navbox li:hover{
+nav li:hover{
     background-color: gray;
 }
 
@@ -105,11 +109,6 @@ nav{
     justify-content: space-around;
     } 
 
-.image4{
-    width: 34%;
-    height: auto;
-    justify-content: flex-start;
-}
 
 .image5{
     width: 40%;
@@ -133,55 +132,37 @@ nav{
     margin: 40px;
 }
 
-.info2{   
-    width: 50%;
-    border: 5px solid black;
-    padding: 10px;
-    margin: 40px;
-}
-
-.info3{
-    width: 50%;
-    height: auto;
-    border: 5px solid black;
-    padding: 10px;
-    margin: 40px;
-}
-
-.info4{
-    width: 50%;
-    height: auto;
-    border: 5px solid black;
-    padding: 10px;
-    margin: 40px;
-}
-
-.designer1{
+.designer1, .designer3{
     display: flex;
     flex-direction: row;
 }
 
-.designer2{
+.designer1 img{
+    width: 34%;
+    height: auto;
+    justify-content: flex-start;
+}
+
+.designer2, .designer4{
     display: flex;
     flex-direction: row-reverse;
 }
 
 .designer3{
-    display: flex;
-    justify-content: flex-start;
     margin-left: -20%;
-}
-
-.designer4{
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 .video1{
     display: flex;
-    justify-content: center;
+    flex-direction: column;  
+    align-items: center;  
     padding-left: 30px;
-    padding-top: 60px;
+    padding-top: 20px;
+    font-size: 40px;
+    border: 5px solid black;
+    margin: 8em;
+    padding: 20px;
+    gap: 0.5em;
 }
 .overlay {
     position:absolute;
@@ -196,7 +177,6 @@ nav{
     background-color: #f4f1eb;
   }
 
-  
 .container:hover .overlay {
     opacity: 1;
   }
@@ -209,8 +189,8 @@ nav{
     left: 50%;  
     transform: translate(-50%, -50%);
     text-align: center;
+    margin-top: 1.4em;
   }
-
 
   .text1 {
     color: black;
